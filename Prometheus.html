@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prometheus</title>
+    <link rel="stylesheet" href="Prometheus.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+          <button class="button" onclick="location.href='/index.html'">
+              <img src="/assets/left-arrow.png" alt="goback" />
+          </button>
+          <button id="open-avatar-creator">Customize Prometheus</button>
+          <button id="toggle-chat-btn">Open Chat</button>
+          <div id="chat-container" style="display: none;">
+            <div id="chat-window">
+              <div id="messages"></div>
+            </div>
+            <form id="chat-form">
+              <input type="text" id="chat-input" placeholder="How may I assist you today..." autocomplete="off" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <h1 class="title">Hello, there</h1>
+          <p class="subtitle">How can I help you today?</p>
+      </div>
+    </header>
+    <br><canvas id="three-canvas"></canvas>
+    <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+    <script type="module" src="./Prometheus.js"></script>
+  </body>
+</html>
